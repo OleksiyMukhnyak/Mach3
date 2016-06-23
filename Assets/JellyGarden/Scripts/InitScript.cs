@@ -495,7 +495,7 @@ public class InitScript : MonoBehaviour
     {
         PlayerPrefs.SetInt("" + boostType, count);
         PlayerPrefs.Save();
-        //   ReloadBoosts();
+        ReloadBoosts();
     }
 
     public void SpendBoost(BoostType boostType)
@@ -503,18 +503,18 @@ public class InitScript : MonoBehaviour
         PlayerPrefs.SetInt("" + boostType, PlayerPrefs.GetInt("" + boostType) - 1);
         PlayerPrefs.Save();
     }
-    //void ReloadBoosts()
-    //{
-    //    BoostExtraMoves = PlayerPrefs.GetInt("" + BoostType.ExtraMoves);
-    //    BoostPackages = PlayerPrefs.GetInt("" + BoostType.Packages);
-    //    BoostStripes = PlayerPrefs.GetInt("" + BoostType.Stripes);
-    //    BoostExtraTime = PlayerPrefs.GetInt("" + BoostType.ExtraTime);
-    //    BoostBomb = PlayerPrefs.GetInt("" + BoostType.Bomb);
-    //    BoostColorful_bomb = PlayerPrefs.GetInt("" + BoostType.Colorful_bomb);
-    //    BoostHand = PlayerPrefs.GetInt("" + BoostType.Hand);
-    //    BoostRandom_color = PlayerPrefs.GetInt("" + BoostType.Random_color);
+    void ReloadBoosts()
+    {
+         BoostExtraMoves = PlayerPrefs.GetInt("" + BoostType.ExtraMoves);
+        BoostPackages = PlayerPrefs.GetInt("" + BoostType.Packages);
+        BoostStripes = PlayerPrefs.GetInt("" + BoostType.Stripes);
+        BoostExtraTime = PlayerPrefs.GetInt("" + BoostType.ExtraTime);
+        BoostBomb = PlayerPrefs.GetInt("" + BoostType.Bomb);
+        BoostColorful_bomb = PlayerPrefs.GetInt("" + BoostType.Colorful_bomb);
+        BoostHand = PlayerPrefs.GetInt("" + BoostType.Hand);
+        BoostRandom_color = PlayerPrefs.GetInt("" + BoostType.Random_color);
 
-    //}
+    }
     //public void onMarketPurchase(PurchasableVirtualItem pvi, string payload, Dictionary<string, string> extra)
     //{
     //    PurchaseSucceded();

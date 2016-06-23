@@ -17,6 +17,8 @@ public class AnimationManager : MonoBehaviour
     bool WaitForAksFriends;
     System.Collections.Generic.Dictionary<string, string> parameters;
 
+   
+
     void OnEnable()
     {
         if (PlayOnEnable)
@@ -160,10 +162,10 @@ public class AnimationManager : MonoBehaviour
         }
         if (name == "MenuPlay")
         {
-            //            InitScript.Instance.currentTarget = InitScript.Instance.targets[PlayerPrefs.GetInt( "OpenLevel" )];
-            transform.Find("Image/Boost1").GetComponent<BoostIcon>().InitBoost();
-            transform.Find("Image/Boost2").GetComponent<BoostIcon>().InitBoost();
-            transform.Find("Image/Boost3").GetComponent<BoostIcon>().InitBoost();
+           //            InitScript.Instance.currentTarget = InitScript.Instance.targets[PlayerPrefs.GetInt( "OpenLevel" )];
+           // transform.Find("Image/Boost1").GetComponent<BoostIcon>().InitBoost();
+           // transform.Find("Image/Boost2").GetComponent<BoostIcon>().InitBoost();
+           //  transform.Find("Image/Boost3").GetComponent<BoostIcon>().InitBoost();
 
         }
         if (name == "MenuPause")

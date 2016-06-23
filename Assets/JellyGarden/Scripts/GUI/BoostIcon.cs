@@ -23,6 +23,7 @@ public class BoostIcon : MonoBehaviour
 
 	public void ActivateBoost ()
 	{
+
 		if (LevelManager.THIS.ActivatedBoost == this) {
 			UnCheckBoost ();
 			return;
@@ -46,7 +47,8 @@ public class BoostIcon : MonoBehaviour
 			}
 
 		} else {
-			OpenBoostShop (type);
+            /// Тут я правил
+			//OpenBoostShop (type);
 		}
 	}
 
