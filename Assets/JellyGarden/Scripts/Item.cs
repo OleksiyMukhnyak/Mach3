@@ -15,6 +15,8 @@ public enum ItemsTypes
 
 public class Item : MonoBehaviour
 {
+    public GameObject[] Effects;
+
     public Sprite[] items;
     public List<StripedItem> stripedItems = new List<StripedItem>();
     public Sprite[] packageItems;
@@ -73,6 +75,7 @@ public class Item : MonoBehaviour
     {
         falling = true;
         GenColor();
+
         // sprRenderer = GetComponentInChildren<SpriteRenderer>();
         if (NextType != ItemsTypes.NONE)
         {
@@ -93,6 +96,7 @@ public class Item : MonoBehaviour
         xScale = transform.localScale.x;
         yScale = transform.localScale.y;
 
+        StartCoroutine(EnableEffect());
         //StartCoroutine(GenRandomSprite());
     }
 
@@ -965,6 +969,24 @@ public class Item : MonoBehaviour
     }
     #endregion
 
+    #region Effects
+
+    /// <summary>
+    /// Рома редачил
+    /// </summary>
+    public IEnumerator EnableEffect()
+    {
+        yield return new WaitForSeconds(1);
+
+      //  Debug.Log("currentType = " + currentType + "/" + COLORView);
+        if (currentType == ItemsTypes.PACKAGE && COLORView == 0)
+        {
+            Effects[0].SetActive(true);
+        }
+    }
+
+
+    #endregion
 }
 
 [System.Serializable]
