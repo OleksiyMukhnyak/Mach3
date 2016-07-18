@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCAE299F-6045-FA07-8353-359EA315869D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.3.5f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_5;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_5;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Epic Toon FX\Demo\ParticleEffectsShowcase\Scripts\PEButtonScript.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\ParticleEffectsShowcase\Scripts\PEDestoryTimed.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\ParticleEffectsShowcase\Scripts\ParticleEffectsLibrary.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\ParticleEffectsShowcase\Scripts\UICanvasManager.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\DragMouseOrbit.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\Epic Toon FX\Scripts\lightScript.cs" />
+    <Compile Include="Assets\Epic Toon FX\Scripts\loopScript.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\AI.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\AdsEvents.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\AnimationManager.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\Background.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\BoostAnimation.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\BoostIcon.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\BoostShop.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\Counter_.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\GUIEvents.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\GameFieldAnim.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\LIFESAddCounter.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\Level.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\LifeShop.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\MapLevelNumber.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\MapTargetIcon.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\MovesLabel.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\Offlineleadboard.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\PreFailed.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\PrePlay.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\ProgressBarScript.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\RewardIcon.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\SelectLevels.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\TargetHolder.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\GUI\Tutorial.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\INAPP.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\Impuls.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\InitScript.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\Item.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\ItemAnimEvents.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\LevelDebugger.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\MusicBase.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\ParticleSorting.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\RomaTest.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\SoundBase.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\Square.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\UnityInAppsIntegration.cs" />
+    <Compile Include="Assets\JellyGarden\Scripts\WaveHelper.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\ApiTest.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\DemoButton.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\IMapProgressManager.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\LevelReachedEventArgs.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\LevelsMap.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\MapCamera.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\MapLevel.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\Path.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\PathMap.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\PlayerPrefsMapProgressManager.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\SplineCurve.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\StarsType.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\TestLevelGUI.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\TranslationType.cs" />
+    <Compile Include="Assets\JellyGarden\SmartLevelsMap\Scripts\WaypointsMover.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Epic Toon FX\EpicToonFX - ReadMe.txt" />
+    <None Include="Assets\Epic Toon FX\TextFile1.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\1.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\10.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\100.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\101.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\102.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\11.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\12.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\13.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\14.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\15.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\16.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\17.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\18.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\19.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\2.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\20.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\21.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\22.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\23.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\24.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\25.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\26.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\27.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\28.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\29.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\3.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\30.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\31.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\32.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\33.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\34.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\35.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\36.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\37.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\38.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\39.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\4.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\40.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\41.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\42.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\43.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\44.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\45.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\46.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\47.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\48.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\49.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\5.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\50.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\51.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\52.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\53.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\54.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\55.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\56.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\57.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\58.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\59.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\6.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\60.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\61.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\62.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\63.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\64.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\65.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\66.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\67.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\68.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\69.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\7.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\70.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\71.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\72.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\73.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\74.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\75.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\76.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\77.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\78.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\79.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\8.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\80.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\81.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\82.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\83.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\84.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\85.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\86.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\87.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\88.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\89.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\9.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\90.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\91.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\92.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\93.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\94.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\95.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\96.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\97.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\98.txt" />
+    <None Include="Assets\JellyGarden\Resources\Levels\99.txt" />
+    <None Include="Assets\JellyGarden\Resources\levelstate.txt.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+</Project>
