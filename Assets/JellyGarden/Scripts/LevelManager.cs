@@ -1523,7 +1523,7 @@ public class LevelManager : MonoBehaviour
         {
             if (item != null)
             {
-                if (item.GetComponent<Item>().currentType != ItemsTypes.INGREDIENT)
+                if (item.GetComponent<Item>() && item.GetComponent<Item>().currentType != ItemsTypes.INGREDIENT)
                 {
                     if (!withoutEffects)
                         item.GetComponent<Item>().DestroyItem();

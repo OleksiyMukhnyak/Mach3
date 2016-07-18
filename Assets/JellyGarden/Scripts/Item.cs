@@ -760,6 +760,30 @@ public class Item : MonoBehaviour
     }
 
     #region Destroying
+
+    private float scaleTimeAnimation = 0.3f;
+
+    IEnumerator ScaleWhenDestroy()
+    {
+        //Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!Льоша редачив!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
+        GameObject[] items = GameObject.FindGameObjectsWithTag("Item");
+
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i] != null)
+            {
+                Vector2 center = new Vector2(transform.localPosition.x, transform.localPosition.y);
+                items[i].GetComponent<WaveHelper>().AddCenter(center);
+                //Debug.Log(center + "!!!!!!!!!!!");
+            }
+        }
+
+        yield return new WaitForSeconds(scaleTimeAnimation);
+
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
+    }
+
     public void DestroyItem(bool showScore = false, string anim_name = "", bool explEffect = false)
     {
         if (destroying)
@@ -799,11 +823,16 @@ public class Item : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
 
             GameObject partcl = Instantiate(Resources.Load("Prefabs/Effects/Firework"), transform.position, Quaternion.identity) as GameObject;
-            partcl.GetComponent<ParticleSystem>().startColor = LevelManager.THIS.scoresColors[color];
+            if (partcl.GetComponent<ParticleSystem>())
+                partcl.GetComponent<ParticleSystem>().startColor = LevelManager.THIS.scoresColors[color];
             Destroy(partcl, 1f);
         }
         else if (currentType != ItemsTypes.INGREDIENT && currentType != ItemsTypes.BOMB)
         {
+
+            StartCoroutine(ScaleWhenDestroy());
+
+
             PlayDestroyAnimation("destroy");
             // GameObject partcl = Instantiate(Resources.Load("Prefabs/Effects/ItemExpl"), transform.position, Quaternion.identity) as GameObject;
             GameObject partcl = LevelManager.THIS.GetExplFromPool();
@@ -978,7 +1007,7 @@ public class Item : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-      //  Debug.Log("currentType = " + currentType + "/" + COLORView);
+        //  Debug.Log("currentType = " + currentType + "/" + COLORView);
         if (currentType == ItemsTypes.PACKAGE && COLORView == 0)
         {
             Effects[0].SetActive(true);

@@ -9,7 +9,7 @@ public class BoostAnimation : MonoBehaviour
     public void ShowEffect()
     {
         GameObject partcl = Instantiate(Resources.Load("Prefabs/Effects/Firework"), transform.position, Quaternion.identity) as GameObject;
-        partcl.GetComponent<ParticleSystem>().startColor = LevelManager.THIS.scoresColors[square.item.color];
+      //  partcl.GetComponent<ParticleSystem>().startColor = LevelManager.THIS.scoresColors[square.item.color];
         Destroy(partcl, 1f);
 
     }
