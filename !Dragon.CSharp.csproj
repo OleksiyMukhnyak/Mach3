@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Dragons\Scripts\AI.cs" />
     <Compile Include="Assets\Dragons\Scripts\AdsEvents.cs" />
+    <Compile Include="Assets\Dragons\Scripts\DragonHelper.cs" />
     <Compile Include="Assets\Dragons\Scripts\GUI\AnimationManager.cs" />
     <Compile Include="Assets\Dragons\Scripts\GUI\Background.cs" />
     <Compile Include="Assets\Dragons\Scripts\GUI\BoostAnimation.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\Dragons\Scripts\ItemAnimEvents.cs" />
     <Compile Include="Assets\Dragons\Scripts\LevelDebugger.cs" />
     <Compile Include="Assets\Dragons\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Dragons\Scripts\LineEffects.cs" />
     <Compile Include="Assets\Dragons\Scripts\MusicBase.cs" />
     <Compile Include="Assets\Dragons\Scripts\ParticleSorting.cs" />
     <Compile Include="Assets\Dragons\Scripts\RomaTest.cs" />

@@ -149,7 +149,8 @@ public class LevelManager : MonoBehaviour
     public int star3;
     public bool showPopupScores;
 
-    public GameObject stripesEffect;
+    public GameObject[] stripesEffect;
+    public GameObject[] dragonsStripesEffect;
     public GameObject star1Anim;
     public GameObject star2Anim;
     public GameObject star3Anim;
@@ -2176,7 +2177,14 @@ public class LevelManager : MonoBehaviour
 
     public void StrippedShow(GameObject obj, bool horrizontal)
     {
-        GameObject effect = Instantiate(stripesEffect, obj.transform.position, Quaternion.identity) as GameObject;
+        Item activeItem = obj.GetComponent<Item>();
+
+        int effectIndex = activeItem.COLORView;
+        GameObject dragonEffect = Instantiate(dragonsStripesEffect[0], obj.transform.position, Quaternion.identity) as GameObject;
+        dragonEffect.GetComponent<DragonHelper>().Run(horrizontal);
+        Destroy(dragonEffect, 2);
+
+        GameObject effect = Instantiate(stripesEffect[effectIndex], obj.transform.position, Quaternion.identity) as GameObject;
         if (!horrizontal)
             effect.transform.Rotate(Vector3.back, 90);
         Destroy(effect, 1);
